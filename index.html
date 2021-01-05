@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="github repos app">
+    <title>github repos app</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            background: #643307;
+        }
+        
+        .container {
+            width: 800px;
+            padding: 0 15px;
+            margin: auto;
+        }
+        
+        .repo-app .ropo-head {
+            padding: 20px;
+            background: #d35400;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .repo-app .ropo-head input {
+            width: 79%;
+            padding: 10px 15px;
+            outline: none;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            border: 1px solid #ddd;
+        }
+        
+        .repo-app .ropo-head input:focus,
+        .repo-app .ropo-head input:active {
+            box-shadow: 2px 2px 5px 1px red, -2px -2px 5px 1px red;
+        }
+        
+        .repo-app .ropo-head button {
+            width: 20%;
+            cursor: pointer;
+            background: red;
+            color: #fff;
+            outline: none;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: capitalize;
+            transition: all .8s ease;
+        }
+        
+        .repo-app .ropo-head button:hover,
+        .repo-app .ropo-head button:active {
+            background: #111;
+        }
+        
+        .repo-app .app-data {
+            padding: 20px;
+            background: #e67e22;
+        }
+        
+        .repo-app .app-data>div {
+            padding: 10px 0;
+            color: #111;
+            background: #f4f4ff;
+            margin-bottom: 10px;
+            padding: 20px;
+            overflow: hidden;
+        }
+        
+        .repo-app .app-data>div:not(:last-child) {
+            border-bottom: 2px solid #ccc;
+        }
+        
+        .repo-app .app-data>div h2 {
+            text-transform: capitalize;
+            margin: 10px 5px;
+            display: inline-block;
+            width: 75%;
+            line-height: 2;
+            letter-spacing: 1px;
+        }
+        
+        .repo-app .app-data>div .ripo-link {
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 5px;
+            margin-left: auto;
+            font-size: 20px;
+            background: red;
+            padding: 5px 15px;
+            border-radius: 5px;
+            width: max-content;
+            color: #fff;
+            transition: all .4s ease;
+        }
+        
+        .repo-app .app-data>div .ripo-link:hover,
+        .repo-app .app-data>div .ripo-link:active {
+            background: #222;
+        }
+        
+        .repo-app .app-data>div>span {
+            display: inline-block;
+            width: max-content;
+            margin: 10px 5px;
+            font-size: 20px;
+            background: #e9e3dd;
+            padding: 5px;
+            color: #111;
+            border-radius: 10px;
+        }
+        
+        .repo-app .app-data>div span>span {
+            color: red;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+        .repo-app .app-data span {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<div class="repo-app">
+    <div class="container">
+        <div class="ropo-head">
+            <input type="text" placeholder="write your githup username">
+            <button>get repos</button>
+        </div>
+
+
+        <div class="app-data">
+
+        </div>
+
+    </div>
+</div>
+
+<body>
+    <script src="main.js"></script>
+</body>
+
+</html>
